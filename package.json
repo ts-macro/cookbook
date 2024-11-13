@@ -1,0 +1,43 @@
+{
+  "name": "tsm-cookbook",
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "packageManager": "pnpm@9.12.3",
+  "description": "TSM Cookbook Monorepo",
+  "author": "TSM Organization",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ts-macro/cookbook.git"
+  },
+  "scripts": {
+    "test": "vitest",
+    "lint": "NODE_OPTIONS=--import=tsx eslint --config=eslint.config.ts .",
+    "prepare": "simple-git-hooks"
+  },
+  "dependencies": {
+    "@tsm-cookbook/replace-with-boolean-literal": "workspace:*"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^3.8.0",
+    "eslint": "^9.14.0",
+    "jiti": "^2.4.0",
+    "lint-staged": "^15.2.10",
+    "muggle-string": "^0.4.1",
+    "simple-git-hooks": "^2.11.1",
+    "ts-macro": "^0.1.5",
+    "tsdown": "^0.3.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.4"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": [
+      "pnpm lint --fix"
+    ]
+  }
+}
