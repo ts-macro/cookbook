@@ -5,7 +5,7 @@ This repository contains a collection of TypeScript macros that can be used with
 ## Showup Milestone Todos
 
 - [ ] Docs site
-- [ ] Transpile diffs for macros powered Volar.js
+- [ ] Show transpile diffs of macros powered by Volar.js
 - [ ] Online playground
 
 ## Macros
