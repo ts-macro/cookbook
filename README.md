@@ -1,6 +1,6 @@
 # TS Macro Cookbook 🍳
 
-This repository contains a collection of TypeScript macros that can be used with the [ts-macros](https://github.com/ts-macro/ts-macro)
+This repository contains a collection of TypeScript macros that can be used with the [ts-macro](https://github.com/ts-macro/ts-macro)
 
 ## Showup Milestone Todos
 
