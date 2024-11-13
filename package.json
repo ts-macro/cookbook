@@ -14,7 +14,8 @@
   "scripts": {
     "test": "vitest",
     "lint": "NODE_OPTIONS=--import=tsx eslint --config=eslint.config.ts .",
-    "prepare": "simple-git-hooks"
+    "prepare": "simple-git-hooks",
+    "build": "turbo build"
   },
   "dependencies": {
     "@tsm-cookbook/replace-with-boolean-literal": "workspace:*"
@@ -29,6 +30,7 @@
     "ts-macro": "^0.1.5",
     "tsdown": "^0.3.0",
     "tsx": "^4.19.2",
+    "turbo": "^2.2.3",
     "typescript": "^5.6.3",
     "vitest": "^2.1.4"
   },
